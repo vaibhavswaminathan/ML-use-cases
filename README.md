@@ -12,3 +12,8 @@ Is it possible to draw a relation between the burn area of a forest fire and the
 be observed using dimensionality reduction methods?
 
 **Techniques/Libraries used:** Regression(linear, logistic), PCA, Parallel Co-ordinates
+
+### perceptron<br>
+Minimalistic code for a 2-layer perceptron (neural network) from scratch that inputs a vector of binaries and network weights, and produces an output with a sigmoid activation function. The code simulates the network's training using gradient descent on a MSE loss function. The trained network is used on test data to produce predictions.
+
+**Techniques/Libraries used:** numpy
