@@ -36,7 +36,7 @@ for i in range(100):
 
     # gradient descent
     # calculate the slope at current x position
-    layer1_delta = layer1_error * sigmoid_to_deriv(layer1) # this is the derivative of the MSE loss function
+    layer1_delta = layer1_error * sigmoid_to_deriv(layer1) # derivative of the MSE loss function
     weights0_deriv = np.dot(layer0.T, layer1_delta)
     # change x by the negative of the slope (x = x - slope)
     weights0 -= weights0_deriv
@@ -47,3 +47,4 @@ predict([1,0,0], weights0)
 #test prediction of the unknown data
 predict([1,1,0], weights0)
 predict([0,0,1], weights0)
+predict([1,0,1], weights0)
